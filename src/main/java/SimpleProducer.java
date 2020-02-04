@@ -34,7 +34,7 @@ public class SimpleProducer {
 		ObjectMapper mapper = new ObjectMapper();
 		try {
 			//Convert object to JSON string and save into file directly
-			mapper.writeValue(new File("/Users/mohsinebahhou/Documents/ProjetDataEngineer/Projet/artiste.json"), list);
+			mapper.writeValue(new File("artiste.json"), list);
 
 
 
