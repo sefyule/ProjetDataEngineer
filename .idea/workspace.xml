@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a0d7dd-9fde-41b4-bd93-d0383e873fa3" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/main/java/KafkaConsumerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/KafkaSampleConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artiste.json" beforeDir="false" afterPath="$PROJECT_DIR$/artiste.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tp1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tp1.class" afterDir="false" />
+    </list>
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SimpleProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SimpleProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SimpleProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SimpleProducer.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+>>>>>>> b236ff875c32b84ca5bdb7b7d2bd5b7303df1ef4
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,30 +42,38 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XILicbtuVbxjR5v5zQMuEf3YxD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Téléchargements/tpRedis_BENHAMIDA_YAHI" />
+>>>>>>> b236ff875c32b84ca5bdb7b7d2bd5b7303df1ef4
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.KafkaConsumerDemo">
+    <configuration name="KafkaConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KafkaConsumerDemo" />
+      <module name="ProjetDataEngineer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SimpleProducer" />
-      <module name="tpdataEngineer" />
+      <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -61,6 +81,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.SimpleProducer" />
+        <item itemvalue="Application.KafkaConsumerDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -74,9 +95,80 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580728789644</updated>
+      <workItem from="1580833535813" duration="13091000" />
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="588" y="214" width="800" height="677" key="#Project_Structure" timestamp="1580846814756">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="214" width="800" height="677" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1580846814756" />
+    <state x="653" y="210" width="671" height="685" key="#SimpleProducer" timestamp="1580834180119">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="653" y="210" width="671" height="685" key="#SimpleProducer/67.27.1853.1053@67.27.1853.1053" timestamp="1580834180119" />
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1580855914914">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1580855914914" />
+    <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580834089587">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580834089587" />
+    <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl" timestamp="1580834006561">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1580858448107">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1580858448107">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1580858448107">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1580858448107">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580834321203" />
+    <state width="1807" height="344" key="GridCell.Tab.1.center" timestamp="1580834321201">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580834321201" />
+    <state width="1807" height="344" key="GridCell.Tab.1.left" timestamp="1580834321200">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580834321200" />
+    <state width="1807" height="344" key="GridCell.Tab.1.right" timestamp="1580834321202">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580834321202" />
+    <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1580850421397">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580850421397" />
+    <state x="482" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1580853999076">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1580853999076" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580833535831">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580833535831" />
+=======
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -89,5 +181,6 @@
         </entry>
       </map>
     </option>
+>>>>>>> b236ff875c32b84ca5bdb7b7d2bd5b7303df1ef4
   </component>
 </project>
