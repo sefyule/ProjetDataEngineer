@@ -18,11 +18,12 @@ public class Personne {
 
     }
 
-    public Personne(String firstName, String lastName, String telephone, String adresse) {
+    public Personne(String firstName, String lastName, String telephone, String adresse, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.telephone = telephone;
         this.adresse = adresse;
+        this.age = age;
     }
 
     public String getFirstName() {
@@ -39,5 +40,9 @@ public class Personne {
 
     public String getAdresse() {
         return adresse;
+    }
+
+    public int getAge() {
+        return age;
     }
 }
