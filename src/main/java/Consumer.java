@@ -7,12 +7,12 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 
 import java.util.*;
 
-public class KafkaSampleConsumer implements Runnable {
+public class Consumer implements Runnable {
     private final KafkaConsumer<String, String> consumer;
     public static final String CLIENT_ID = "testTopic";
     Properties props;
 
-    public KafkaSampleConsumer(String topic) {
+    public Consumer(String topic) {
         props = new Properties();
         props.put("bootstrap.servers","localhost:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
@@ -44,7 +44,7 @@ public class KafkaSampleConsumer implements Runnable {
 
     }
     public static void main(String[] args) {
-        KafkaSampleConsumer consumerThread = new KafkaSampleConsumer("testTopic");
+        Consumer consumerThread = new Consumer("testTopic");
         consumerThread.run();
     }
 }
