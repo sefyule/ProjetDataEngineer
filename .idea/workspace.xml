@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81a0d7dd-9fde-41b4-bd93-d0383e873fa3" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="81a0d7dd-9fde-41b4-bd93-d0383e873fa3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tp1.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
@@ -18,27 +27,34 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XILicbtuVbxjR5v5zQMuEf3YxD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -64,7 +80,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580728789644</updated>
+      <workItem from="1580833851870" duration="1096000" />
+      <workItem from="1580908406779" duration="21000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="326" y="41" key="#SimpleProducer" timestamp="1580834176673">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="326" y="41" key="#SimpleProducer/0.23.1280.727@0.23.1280.727" timestamp="1580834176673" />
+    <state x="499" y="272" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580833992971">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="499" y="272" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.727@0.23.1280.727" timestamp="1580833992971" />
+    <state width="1218" height="174" key="GridCell.Tab.0.bottom" timestamp="1580846449667">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1218" height="174" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1580846449667" />
+    <state width="1218" height="174" key="GridCell.Tab.0.center" timestamp="1580846449665">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1218" height="174" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1580846449665" />
+    <state width="1218" height="174" key="GridCell.Tab.0.left" timestamp="1580846449665">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1218" height="174" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1580846449665" />
+    <state width="1218" height="174" key="GridCell.Tab.0.right" timestamp="1580846449666">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state width="1218" height="174" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1580846449666" />
+    <state x="188" y="38" key="Maven.ArtifactSearchDialog" timestamp="1580833954389">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="188" y="38" key="Maven.ArtifactSearchDialog/0.23.1280.727@0.23.1280.727" timestamp="1580833954389" />
   </component>
 </project>
