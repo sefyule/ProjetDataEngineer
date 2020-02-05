@@ -2,6 +2,8 @@ import com.github.javafaker.Faker;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.annotate.JsonMethod;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -18,7 +20,7 @@ public class MessageProducer {
 
         try {
 
-            ObjectMapper mapper = new ObjectMapper();
+            ObjectMapper mapper = new ObjectMapper().setVisibility(JsonMethod.FIELD, JsonAutoDetect.Visibility.ANY);
             Properties props = new Properties();
             props.put("bootstrap.servers","localhost:9092");
             props.put("key.serializer" , "org.apache.kafka.common.serialization.StringSerializer");
@@ -28,7 +30,9 @@ public class MessageProducer {
             List<Message> list= new ArrayList<Message>();
             for(int i=0; i<100 ; i++ ){
                 Message message = new Message();
+                System.out.println(message);
                 String jsonMessage = mapper.writeValueAsString(message);
+                System.out.println(jsonMessage);
                 ProducerRecord<String, String> record = new ProducerRecord<String, String>("test" , jsonMessage);
                 list.add(message);
                 producer.send(record);
