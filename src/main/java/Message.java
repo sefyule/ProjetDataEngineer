@@ -27,7 +27,9 @@ public class Message {
                 while (resultSet.next()) {
                     try {
                         refProduit=resultSet.getInt("cip");
-                        prix=resultSet.getDouble("prix");
+                        int randPOurcentage = 10 - (int)(Math.random() * 21);
+                        double tmpPrix = resultSet.getDouble("prix");
+                        prix = tmpPrix + (tmpPrix*randPOurcentage/ 100);
 
 
                     } catch (SQLException e) {

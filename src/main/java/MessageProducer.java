@@ -30,7 +30,6 @@ public class MessageProducer {
             List<Message> list= new ArrayList<Message>();
             for(int i=0; i<100 ; i++ ){
                 Message message = new Message();
-                System.out.println(message);
                 String jsonMessage = mapper.writeValueAsString(message);
                 System.out.println(jsonMessage);
                 ProducerRecord<String, String> record = new ProducerRecord<String, String>("test" , jsonMessage);
