@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "Drugs",
+  "fields" : [
+    {"name":"nom", "type":"string"},
+    {"name":"prenom", "type":"string"},
+    {"name":"cip", "type":"int"},
+    {"name":"prix", "type":"float"},
+    {"name":"idpharma", "type":"int"}
+  ]
+}
