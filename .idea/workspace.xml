@@ -4,16 +4,9 @@
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Medicament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Medicament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/MessageProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pharmacie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Pharmacie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/SimpleProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Personne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SimpleProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ressources/drugtxn.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/drugtxn.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../projetCpp/BENNI_CHEKIRINE_ASSO/BENNI_CHEKIRINE_ASSO" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -142,17 +135,19 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="588" y="214" width="800" height="677" key="#Project_Structure" timestamp="1580846814756">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="472" y="198" width="800" height="677" key="#Project_Structure" timestamp="1581073103187">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
+    <state x="472" y="198" key="#Project_Structure/0.23.1680.986@0.23.1680.986" timestamp="1581073103187" />
     <state x="588" y="214" width="800" height="677" key="#Project_Structure/67.27.1853.1053@67.27.1853.1053" timestamp="1580846814756" />
     <state x="653" y="210" width="671" height="685" key="#SimpleProducer" timestamp="1580834180119">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="653" y="210" width="671" height="685" key="#SimpleProducer/67.27.1853.1053@67.27.1853.1053" timestamp="1580834180119" />
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1580937719452">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="665" y="246" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1581073908043">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
+    <state x="665" y="246" key="#com.intellij.ide.util.MemberChooser/0.23.1680.986@0.23.1680.986" timestamp="1581073908043" />
     <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1580937719452" />
     <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580834089587">
       <screen x="67" y="27" width="1853" height="1053" />
