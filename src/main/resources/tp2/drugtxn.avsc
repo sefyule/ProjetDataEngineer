@@ -5,7 +5,7 @@
     {"name":"nom", "type":"string"},
     {"name":"prenom", "type":"string"},
     {"name":"cip", "type":"int"},
-    {"name":"prix", "type":"float"},
+    {"name":"prix", "type":"double"},
     {"name":"idpharma", "type":"int"}
   ]
 }

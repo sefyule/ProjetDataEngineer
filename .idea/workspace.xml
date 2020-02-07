@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tp2/drugtxn.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ressources/drugtxn.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/drugtxn.avsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tp2/drugtxn.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tp2/drugtxn.avsc" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,17 +68,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProducerAvro">
+  <component name="RunManager" selected="Application.ProducerAvro2">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tp1.Consumer" />
       <module name="tp-dataEngineer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KafkaConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KafkaConsumerDemo" />
-      <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,13 +103,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProducerAvro2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp2.ProducerAvro2" />
+      <module name="tp-dataEngineer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tp2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProducerAvro" />
+        <item itemvalue="Application.ProducerAvro2" />
         <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.ProducerAvro" />
         <item itemvalue="Application.MessageProducer" />
         <item itemvalue="Application.Producer" />
-        <item itemvalue="Application.KafkaConsumerDemo" />
       </list>
     </recent_temporary>
   </component>

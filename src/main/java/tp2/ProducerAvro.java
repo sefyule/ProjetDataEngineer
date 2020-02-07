@@ -136,7 +136,7 @@ public class ProducerAvro {
             // Convert the Status object into an Avro Record for serialising and publishing to the Kafka Topic
             GenericData.Record avroRecord = createRecord(status);
             byte[] avroRecordBytes = recordInjection.apply(avroRecord);
-            ProducerRecord<String, byte[]> record = new ProducerRecord<>("topic", avroRecordBytes);
+            ProducerRecord<String, byte[]> record = new ProducerRecord<>("test", avroRecordBytes);
 
             // Send the Message to Kafka
             producer.send(record);
@@ -200,9 +200,16 @@ public class ProducerAvro {
             // Create the Avro Schema
             Schema.Parser parser = new Schema.Parser();
             schema = parser.parse(ProducerAvro.class.getResourceAsStream("drugtxn.avsc"));
-            recordInjection = GenericAvroCodecs.toBinary(schema);
 
-            // Connect to the Twitter Streaming API and start the Producer
+            recordInjection = GenericAvroCodecs.toBinary(schema);
+            GenericData.Record record = new GenericData.Record(schema);
+
+            Message message = new Message();
+            record.put("nom", message.getNom());
+            byte[] b = recordInjection.apply(record);
+
+
+
             ProducerAvro.run(args[0]);
 
         } catch (Exception e) {
