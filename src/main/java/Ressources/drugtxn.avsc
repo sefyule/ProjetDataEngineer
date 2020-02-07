@@ -1,6 +1,6 @@
 {
 "type": "record",
-"name": "Prof",
+"name": "Drugs",
 "fields" : [
   {"name":"nom", "type":"string"},
   {"name":"prenom", "type":"string"},
