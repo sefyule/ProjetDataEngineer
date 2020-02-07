@@ -15,7 +15,7 @@ public class Message {
         Personne p =new Personne();
         this.nom=p.getLastName();
         this.prenom=p.getFirstName();
-        try(Connection connection = DriverManager.getConnection("jdbc:postgresql://sqletud.u-pem.fr/ychekiri_db", "ychekiri", "01/02/1961")){
+        try(Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/M2-BigData", "postgres", "hersant")){
             Statement statement = null;
             try {
                 statement = ((Connection) connection).createStatement();
