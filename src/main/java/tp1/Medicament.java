@@ -1,3 +1,4 @@
+package tp1;
 
 public class Medicament {
 

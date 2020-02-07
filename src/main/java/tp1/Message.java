@@ -1,3 +1,5 @@
+package tp1;
+
 import java.sql.*;
 
 public class Message {
@@ -5,10 +7,9 @@ public class Message {
 
     private String nom;
     private String prenom;
-    private int refProduit;
+    private int cip;
     private double prix;
-
-    private int refLieuAchat;
+    private int idpharma;
 
 
     public Message() throws SQLException {
@@ -26,7 +27,7 @@ public class Message {
                 ResultSet resultSet = statement.executeQuery("select * from drugs4projet ORDER BY RANDOM()  LIMIT 1");
                 while (resultSet.next()) {
                     try {
-                        refProduit=resultSet.getInt("cip");
+                        cip =resultSet.getInt("cip");
                         int randPOurcentage = 10 - (int)(Math.random() * 21);
                         double tmpPrix = resultSet.getDouble("prix");
                         prix = tmpPrix + (tmpPrix*randPOurcentage/ 100);
@@ -41,7 +42,7 @@ public class Message {
 
                 while (resultSet2.next()) {
                     try {
-                        refLieuAchat=resultSet2.getInt("id");
+                        idpharma =resultSet2.getInt("id");
 
                     } catch (SQLException e) {
                         e.printStackTrace();
@@ -51,25 +52,20 @@ public class Message {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-
-
-
-
         }
 
 
     }
 
 
-
     @Override
     public String toString() {
-        return "Message{" +
+        return "tp1.Message{" +
                 "nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
-                ", refProduit=" + refProduit +
+                ", refProduit=" + cip +
                 ", prix=" + prix +
-                ", refLieuAchat=" + refLieuAchat +
+                ", refLieuAchat=" + idpharma +
                 '}';
     }
 

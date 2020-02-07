@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Messages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personnes.json" beforeDir="false" afterPath="$PROJECT_DIR$/Personnes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artiste.json" beforeDir="false" afterPath="$PROJECT_DIR$/artiste.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ressources/drugtxn.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ressources/drugtxn.avsc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +37,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../projetCpp/BENNI_CHEKIRINE_ASSO/BENNI_CHEKIRINE_ASSO" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.MessageProducer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Consumer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.Consumer" />
       <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -62,21 +71,21 @@
       </method>
     </configuration>
     <configuration name="MessageProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MessageProducer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.MessageProducer" />
       <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Producer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.Producer" />
       <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SimpleProducer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.SimpleProducer" />
       <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,8 +96,8 @@
         <item itemvalue="Application.MessageProducer" />
         <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Producer" />
-        <item itemvalue="Application.SimpleProducer" />
         <item itemvalue="Application.KafkaConsumerDemo" />
+        <item itemvalue="Application.Producer" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +106,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="81a0d7dd-9fde-41b4-bd93-d0383e873fa3" name="Default Changelist" comment="" />
+      <changelist id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="" />
       <created>1580728789644</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -123,14 +132,6 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="326" y="41" key="#Consumer" timestamp="1581068578550">
-      <screen x="0" y="23" width="1280" height="723" />
-    </state>
-    <state x="326" y="41" key="#Consumer/0.23.1280.723@0.23.1280.723" timestamp="1581068578550" />
-    <state x="326" y="41" key="#MessageProducer" timestamp="1581071062864">
-      <screen x="0" y="23" width="1280" height="723" />
-    </state>
-    <state x="326" y="41" key="#MessageProducer/0.23.1280.723@0.23.1280.723" timestamp="1581071062864" />
     <state x="588" y="214" width="800" height="677" key="#Project_Structure" timestamp="1580846814756">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -151,25 +152,21 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
-    <state width="1218" height="85" key="GridCell.Tab.0.bottom" timestamp="1581072976944">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1807" height="291" key="GridCell.Tab.0.bottom" timestamp="1580940693857">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1218" height="85" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1581072976944" />
     <state width="1807" height="291" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
-    <state width="1218" height="85" key="GridCell.Tab.0.center" timestamp="1581072976941">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1807" height="291" key="GridCell.Tab.0.center" timestamp="1580940693856">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1218" height="85" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1581072976941" />
     <state width="1807" height="291" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1218" height="85" key="GridCell.Tab.0.left" timestamp="1581072976939">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1807" height="291" key="GridCell.Tab.0.left" timestamp="1580940693856">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1218" height="85" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1581072976939" />
     <state width="1807" height="291" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1218" height="85" key="GridCell.Tab.0.right" timestamp="1581072976943">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state width="1807" height="291" key="GridCell.Tab.0.right" timestamp="1580940693857">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1218" height="85" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1581072976943" />
     <state width="1807" height="291" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">
       <screen x="67" y="27" width="1853" height="1053" />

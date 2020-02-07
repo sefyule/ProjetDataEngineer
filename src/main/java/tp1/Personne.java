@@ -1,3 +1,5 @@
+package tp1;
+
 import com.github.javafaker.Faker;
 
 public class Personne {

@@ -1,3 +1,5 @@
+package tp1;
+
 public class Pharmacie {
 
     private int id;

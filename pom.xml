@@ -41,6 +41,12 @@
             <version>1.9.13</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>bijection-avro_2.13</artifactId>
+            <version>0.9.7</version>
+        </dependency>
+
     </dependencies>
 
 
