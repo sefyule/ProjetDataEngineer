@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81a0d7dd-9fde-41b4-bd93-d0383e873fa3" name="Default Changelist" comment="">
+    <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaSampleConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KafkaSampleConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +42,22 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.Producer">
-    <configuration name="ConsumerLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConsumerLoop" />
-      <module name="ProjetDataEngineer" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MessageProducer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Consumer" />
+      <module name="tp-dataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -58,9 +69,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KafkaSampleConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KafkaSampleConsumer" />
-      <module name="ProjetDataEngineer" />
+    <configuration name="MessageProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MessageProducer" />
+      <module name="tp-dataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MessageProducer" />
+        <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Producer" />
-        <item itemvalue="Application.KafkaSampleConsumer" />
-        <item itemvalue="Application.ConsumerLoop" />
         <item itemvalue="Application.KafkaConsumerDemo" />
-        <item itemvalue="Application.SimpleProducer" />
+        <item itemvalue="Application.Producer" />
       </list>
     </recent_temporary>
   </component>
@@ -105,6 +116,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="214" width="800" height="677" key="#Project_Structure" timestamp="1580846814756">
@@ -179,19 +203,5 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1580939055303" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Producer.java</url>
-          <line>15</line>
-          <properties class="Producer" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

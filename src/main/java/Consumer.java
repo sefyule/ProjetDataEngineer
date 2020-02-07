@@ -44,7 +44,7 @@ public class Consumer implements Runnable {
 
     }
     public static void main(String[] args) {
-        Consumer consumerThread = new Consumer("testTopic");
+        Consumer consumerThread = new Consumer("test");
         consumerThread.run();
     }
 }
