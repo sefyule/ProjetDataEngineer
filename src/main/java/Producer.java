@@ -28,7 +28,7 @@ public class Producer {
         for(int i=0; i<100 ; i++ ){
             Personne personne = new Personne();
             String jsonPersonne = mapper.writeValueAsString(personne);
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>("test" , jsonPersonne);
+            ProducerRecord<String, String> record = new ProducerRecord<String, String>("testTopic" , jsonPersonne);
             list.add(personne);
             producer.send(record);
         }

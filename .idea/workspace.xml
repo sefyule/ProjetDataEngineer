@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a0d7dd-9fde-41b4-bd93-d0383e873fa3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaSampleConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KafkaSampleConsumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +33,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.MessageProducer">
+  <component name="RunManager" selected="Application.Producer">
+    <configuration name="ConsumerLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConsumerLoop" />
+      <module name="ProjetDataEngineer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KafkaConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KafkaConsumerDemo" />
       <module name="ProjetDataEngineer" />
@@ -46,16 +58,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MessageProducer" />
-      <module name="tp-dataEngineer" />
+    <configuration name="KafkaSampleConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KafkaSampleConsumer" />
+      <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Producer" />
-      <module name="tp-dataEngineer" />
+      <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,9 +81,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MessageProducer" />
-        <item itemvalue="Application.KafkaConsumerDemo" />
         <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.KafkaSampleConsumer" />
+        <item itemvalue="Application.ConsumerLoop" />
+        <item itemvalue="Application.KafkaConsumerDemo" />
         <item itemvalue="Application.SimpleProducer" />
       </list>
     </recent_temporary>
@@ -87,43 +100,13 @@
       <option name="presentableId" value="Default" />
       <updated>1580728789644</updated>
       <workItem from="1580833535813" duration="13091000" />
-      <workItem from="1580988341779" duration="629000" />
     </task>
-    <task id="LOCAL-00001" summary="Config">
-      <created>1580988593789</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1580988593789</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="326" y="41" key="#MessageProducer" timestamp="1580989088099">
-      <screen x="0" y="23" width="1280" height="724" />
-    </state>
-    <state x="326" y="41" key="#MessageProducer/0.23.1280.724@0.23.1280.724" timestamp="1580989088099" />
     <state x="588" y="214" width="800" height="677" key="#Project_Structure" timestamp="1580846814756">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -132,39 +115,34 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="653" y="210" width="671" height="685" key="#SimpleProducer/67.27.1853.1053@67.27.1853.1053" timestamp="1580834180119" />
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1580855914914">
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1580937719452">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1580855914914" />
-    <state x="530" y="310" width="302" height="149" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580988516480">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1580937719452" />
+    <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580834089587">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="530" y="310" width="302" height="149" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.724@0.23.1280.724" timestamp="1580988516480" />
     <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580834089587" />
-    <state x="144" y="23" key="CommitChangelistDialog2" timestamp="1580988592998">
-      <screen x="0" y="23" width="1280" height="724" />
-    </state>
-    <state x="144" y="23" key="CommitChangelistDialog2/0.23.1280.724@0.23.1280.724" timestamp="1580988592998" />
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl" timestamp="1580834006561">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1580858448107">
+    <state width="1807" height="291" key="GridCell.Tab.0.bottom" timestamp="1580940693857">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
-    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1580858448107">
+    <state width="1807" height="291" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
+    <state width="1807" height="291" key="GridCell.Tab.0.center" timestamp="1580940693856">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
-    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1580858448107">
+    <state width="1807" height="291" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
+    <state width="1807" height="291" key="GridCell.Tab.0.left" timestamp="1580940693856">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
-    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1580858448107">
+    <state width="1807" height="291" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
+    <state width="1807" height="291" key="GridCell.Tab.0.right" timestamp="1580940693857">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580858448107" />
+    <state width="1807" height="291" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -189,13 +167,31 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1580853999076" />
-    <state x="250" y="116" key="Vcs.Push.Dialog.v2" timestamp="1580988598857">
-      <screen x="0" y="23" width="1280" height="724" />
-    </state>
-    <state x="250" y="116" key="Vcs.Push.Dialog.v2/0.23.1280.724@0.23.1280.724" timestamp="1580988598857" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580833535831">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580833535831" />
+    <state x="738" y="171" width="500" height="762" key="refactoring.ChangeSignatureDialog" timestamp="1580937725886">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="738" y="171" width="500" height="762" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580937725886" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580939055303">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1580939055303" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Producer.java</url>
+          <line>15</line>
+          <properties class="Producer" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
