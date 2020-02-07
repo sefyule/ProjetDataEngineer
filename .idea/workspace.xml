@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ressources/drugtxn.avsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/Messages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Medicament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Medicament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MessageProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/MessageProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Personne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pharmacie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Pharmacie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/SimpleProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Personne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SimpleProducer.class" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,22 +53,10 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.MessageProducer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Consumer" />
-      <module name="tp-dataEngineer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.Consumer" />
+      <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,21 +69,21 @@
       </method>
     </configuration>
     <configuration name="MessageProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MessageProducer" />
-      <module name="tp-dataEngineer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.MessageProducer" />
+      <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Producer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.Producer" />
       <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SimpleProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SimpleProducer" />
+      <option name="MAIN_CLASS_NAME" value="tp1.SimpleProducer" />
       <module name="ProjetDataEngineer" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,6 +98,18 @@
         <item itemvalue="Application.Producer" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />

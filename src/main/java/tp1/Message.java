@@ -1,3 +1,5 @@
+package tp1;
+
 import java.sql.*;
 
 public class Message {
@@ -58,7 +60,7 @@ public class Message {
 
     @Override
     public String toString() {
-        return "Message{" +
+        return "tp1.Message{" +
                 "nom='" + nom + '\'' +
                 ", prenom='" + prenom + '\'' +
                 ", refProduit=" + cip +
