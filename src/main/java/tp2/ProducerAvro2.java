@@ -52,7 +52,7 @@ public class ProducerAvro2 {
                 genericRecord.put("cip", message.getCip());
                 genericRecord.put("prix", message.getPrix());
                 genericRecord.put("idpharma", message.getIdpharma());
-                ProducerRecord<String, byte[]> record = new ProducerRecord<>("test" , recordInjection.apply(genericRecord));
+                ProducerRecord<String, byte[]> record = new ProducerRecord<>("tp2" , recordInjection.apply(genericRecord));
                 /*  .invert */
                 list.add(message);
                 producer.send(record);

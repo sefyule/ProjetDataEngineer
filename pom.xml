@@ -51,6 +51,13 @@
             <version>1.9.13</version>
         </dependency>
 
+        <!-- Scala dependence -->
+        <dependency>
+            <groupId>com.metamx</groupId>
+            <artifactId>scala-util_2.12</artifactId>
+            <version>1.14.1</version>
+        </dependency>
+
         <!-- Apache Avro -->
         <dependency>
             <groupId>org.apache.avro</groupId>
@@ -78,11 +85,25 @@
             <artifactId>hbc-core</artifactId>
             <version>${twitter.hbc.core.version}</version>
         </dependency>
+
+        <!-- Scala util -->
+        <dependency>
+            <groupId>com.metamx</groupId>
+            <artifactId>scala-util_2.12</artifactId>
+            <version>1.14.1</version>
+        </dependency>
+
         <dependency>
             <groupId>com.twitter</groupId>
             <artifactId>hbc-twitter4j</artifactId>
             <version>${twitter.hbc.twitter4j.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.7</version>
+        </dependency>
+
 
     </dependencies>
 

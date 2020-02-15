@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tpdataEngineer" />
         <module name="ProjetDataEngineer" />
+        <module name="DataEngineer" />
         <module name="tp-dataEngineer" />
       </profile>
     </annotationProcessing>
