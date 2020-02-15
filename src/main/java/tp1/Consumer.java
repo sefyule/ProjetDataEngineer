@@ -27,6 +27,7 @@ public class Consumer implements Runnable {
     @Override
     public void run() {
         try{
+
             while (true) {
                 ConsumerRecords<String, String> records = consumer.poll(Long.MAX_VALUE);
                 for (ConsumerRecord<String, String> record : records) {

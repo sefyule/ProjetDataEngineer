@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tp2/drugtxn.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tp2/drugtxn.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,18 +55,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.ProducerAvro2">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -126,6 +114,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -137,6 +137,10 @@
       <option name="presentableId" value="Default" />
       <updated>1580728789644</updated>
       <workItem from="1580833535813" duration="13091000" />
+      <workItem from="1581763346035" duration="302000" />
+      <workItem from="1581763700117" duration="215000" />
+      <workItem from="1581764011851" duration="7000" />
+      <workItem from="1581764048276" duration="2287000" />
     </task>
     <servers />
   </component>
@@ -171,9 +175,10 @@
     </state>
     <state x="665" y="246" key="#com.intellij.ide.util.MemberChooser/0.23.1680.986@0.23.1680.986" timestamp="1581073908043" />
     <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1580937719452" />
-    <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580834089587">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="565" y="288" width="304" height="150" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581763455313">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="565" y="288" width="304" height="150" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1581763455313" />
     <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580834089587" />
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl" timestamp="1580834006561">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -211,17 +216,19 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1807" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580834321202" />
-    <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1580850421397">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="338" y="35" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1581765697537">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="338" y="35" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1581765697537" />
     <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580850421397" />
     <state x="482" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1580853999076">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1580853999076" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580833535831">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="429" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1581764048113">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="429" y="244" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581764048113" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580833535831" />
     <state x="738" y="171" width="500" height="762" key="refactoring.ChangeSignatureDialog" timestamp="1580937725886">
       <screen x="67" y="27" width="1853" height="1053" />
