@@ -9,8 +9,8 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.serialization.ByteArrayDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import scala.util.Try;
 import tp1.Consumer;
 
 import java.io.IOException;
@@ -31,8 +31,8 @@ public class ConsumerAvro implements Runnable {
         props = new Properties();
         props.put("bootstrap.servers","localhost:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
-        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class.getName());
         props.put("key.serializer" , "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer" , "org.apache.kafka.common.serialization.ByteArraySerializer");
         consumer = new KafkaConsumer<String, byte[]>(props);
@@ -52,15 +52,10 @@ public class ConsumerAvro implements Runnable {
             while (true) {
                 ConsumerRecords<String, byte[]> records = consumer.poll(Long.MAX_VALUE);
                 for (ConsumerRecord<String, byte[]> record : records) {
-                    Try<GenericRecord> genericRecord = recordInjection.invert(record.value());
-                    System.out.println(genericRecord.get().get("name"));
-                    /*genericRecord.put("partition", record.partition());
-                    genericRecord.put("offset", record.offset());
-                    genericRecord.put(":", recordInjection.invert(record.value());
+                    scala.util.Try<GenericRecord> genericRecord = recordInjection.invert(record.value());
+                    System.out.println(genericRecord);
+                    System.out.println(genericRecord.get().get("nom"));
 
-                    genericRecord.get().get("");
-
-                    System.out.println(": " + data);*/
                 }
             }
         } finally {
@@ -69,7 +64,7 @@ public class ConsumerAvro implements Runnable {
 
     }
     public static void main(String[] args) {
-        Consumer consumerThread = new Consumer("test");
+        ConsumerAvro consumerThread = new ConsumerAvro("tp2");
         consumerThread.run();
     }
 

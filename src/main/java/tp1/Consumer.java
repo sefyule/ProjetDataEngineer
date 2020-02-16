@@ -35,7 +35,7 @@ public class Consumer implements Runnable {
                     data.put("partition", record.partition());
                     data.put("offset", record.offset());
                     data.put("value", record.value());
-                    System.out.println(": " + data);
+                    System.out.println("Print data : " + data);
                 }
             }
         }catch (Exception e){
