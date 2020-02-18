@@ -11,6 +11,16 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <apache.avro.version>1.8.1</apache.avro.version>
+        <apache.kafka.2.11.version>0.8.2.2</apache.kafka.2.11.version>
+        <bijection.avro.2.11.version>0.9.5</bijection.avro.2.11.version>
+        <jdk.version>1.8</jdk.version>
+        <maven.plugins.maven-assembly-plugin.version>3.0.0</maven.plugins.maven-assembly-plugin.version>
+        <maven.plugins.maven-compiler-plugin.version>3.6.1</maven.plugins.maven-compiler-plugin.version>
+        <output.directory>/hyperlearningai/knowledgebase/kafka/jars</output.directory>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <twitter.hbc.core.version>2.2.0</twitter.hbc.core.version>
+        <twitter.hbc.twitter4j.version>2.2.0</twitter.hbc.twitter4j.version>
     </properties>
     <dependencies>
         <dependency>
@@ -41,11 +51,59 @@
             <version>1.9.13</version>
         </dependency>
 
+        <!-- Scala dependence -->
+        <dependency>
+            <groupId>com.metamx</groupId>
+            <artifactId>scala-util_2.12</artifactId>
+            <version>1.14.1</version>
+        </dependency>
+
+        <!-- Apache Avro -->
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>${apache.avro.version}</version>
+        </dependency>
+
+        <!-- Apache Kafka -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.11</artifactId>
+            <version>${apache.kafka.2.11.version}</version>
+        </dependency>
+
+        <!-- Bijection -->
         <dependency>
             <groupId>com.twitter</groupId>
-            <artifactId>bijection-avro_2.13</artifactId>
-            <version>0.9.7</version>
+            <artifactId>bijection-avro_2.11</artifactId>
+            <version>${bijection.avro.2.11.version}</version>
         </dependency>
+
+        <!-- Twitter Hosebird Client -->
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>hbc-core</artifactId>
+            <version>${twitter.hbc.core.version}</version>
+        </dependency>
+
+        <!-- Scala util -->
+        <dependency>
+            <groupId>com.metamx</groupId>
+            <artifactId>scala-util_2.12</artifactId>
+            <version>1.14.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>hbc-twitter4j</artifactId>
+            <version>${twitter.hbc.twitter4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.7</version>
+        </dependency>
+
 
     </dependencies>
 

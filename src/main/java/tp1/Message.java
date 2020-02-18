@@ -58,6 +58,26 @@ public class Message {
     }
 
 
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public int getCip() {
+        return cip;
+    }
+
+    public double getPrix() {
+        return prix;
+    }
+
+    public int getIdpharma() {
+        return idpharma;
+    }
+
     @Override
     public String toString() {
         return "tp1.Message{" +
@@ -68,5 +88,7 @@ public class Message {
                 ", refLieuAchat=" + idpharma +
                 '}';
     }
+
+
 
 }

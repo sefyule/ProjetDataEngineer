@@ -1,0 +1,8 @@
+CREATE TABLE transaction(
+   transaction_id serial PRIMARY KEY,
+   nom VARCHAR (50) NOT NULL,
+   prenom VARCHAR (50) NOT NULL,
+   cip integer NOT NULL,
+   prix double precision NOT NULL,
+   id_pharma integer NOT NULL
+);
