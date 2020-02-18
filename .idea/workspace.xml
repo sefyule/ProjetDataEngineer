@@ -4,6 +4,7 @@
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Ressources/drugtxn.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ressources/drugtxn.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -41,19 +49,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Application.MessageProducer">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -112,6 +108,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580728789644</updated>
       <workItem from="1580833535813" duration="13091000" />
+      <workItem from="1581081062748" duration="376000" />
+      <workItem from="1582019631723" duration="308000" />
     </task>
     <servers />
   </component>
@@ -152,21 +150,25 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
-    <state width="1807" height="291" key="GridCell.Tab.0.bottom" timestamp="1580940693857">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1218" height="85" key="GridCell.Tab.0.bottom" timestamp="1581076322769">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
+    <state width="1218" height="85" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1581076322769" />
     <state width="1807" height="291" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
-    <state width="1807" height="291" key="GridCell.Tab.0.center" timestamp="1580940693856">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1218" height="85" key="GridCell.Tab.0.center" timestamp="1581076322768">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
+    <state width="1218" height="85" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1581076322768" />
     <state width="1807" height="291" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1807" height="291" key="GridCell.Tab.0.left" timestamp="1580940693856">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1218" height="85" key="GridCell.Tab.0.left" timestamp="1581076322767">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
+    <state width="1218" height="85" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1581076322767" />
     <state width="1807" height="291" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1807" height="291" key="GridCell.Tab.0.right" timestamp="1580940693857">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1218" height="85" key="GridCell.Tab.0.right" timestamp="1581076322768">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
+    <state width="1218" height="85" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1581076322768" />
     <state width="1807" height="291" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -188,9 +190,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="526" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580850421397" />
-    <state x="482" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1580853999076">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="287" y="24" width="900" height="722" key="SettingsEditor" timestamp="1582020568899">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
+    <state x="287" y="24" width="900" height="722" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1582020568899" />
     <state x="482" y="187" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1580853999076" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1580833535831">
       <screen x="67" y="27" width="1853" height="1053" />
