@@ -3,6 +3,7 @@ package tp2;
 import com.twitter.bijection.Injection;
 import com.twitter.bijection.avro.GenericAvroCodecs;
 import org.apache.avro.Schema;
+import org.apache.avro.generic.GenericData;
 import org.apache.avro.generic.GenericRecord;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -13,16 +14,15 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
-import org.apache.kafka.streams.errors.StreamsException;
 import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.KStream;
+import org.apache.kafka.streams.kstream.Produced;
 
 import java.io.IOException;
-import java.sql.*;
 import java.util.Collections;
 import java.util.Properties;
 
-public class ConsumerAvroPersist implements Runnable {
+public class ConsumerAvroAnonym implements Runnable {
 
     private static Schema schema;
     private static Injection<GenericRecord, byte[]> recordInjection;
@@ -30,7 +30,7 @@ public class ConsumerAvroPersist implements Runnable {
     public static final String CLIENT_ID = "testTopic";
     Properties props;
 
-    public ConsumerAvroPersist(String topic) {
+    public ConsumerAvroAnonym(String topic) {
         props = new Properties();
         props.put("bootstrap.servers","localhost:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
@@ -47,7 +47,7 @@ public class ConsumerAvroPersist implements Runnable {
     }
     @Override
     public void run() {
-        try {
+        try{
             Schema.Parser parser = new Schema.Parser();
             try {
                 schema = parser.parse(ProducerAvro.class.getResourceAsStream("drugtxn.avsc"));
@@ -59,66 +59,48 @@ public class ConsumerAvroPersist implements Runnable {
             Serde<String> stringSerdes = Serdes.String();
             Serde<byte[]> byteArray = new Serdes.ByteArraySerde();
             StreamsBuilder builder = new StreamsBuilder();
-            Connection connection = null;
+            KStream<String,byte[]> sourceProcessor = builder.stream("tp2", Consumed.with(stringSerdes,byteArray));
 
-            try{
-                connection = DriverManager.getConnection("jdbc:postgresql://sqletud.u-pem.fr/ychekiri_db", "ychekiri", "01/02/1961");
-                Connection tmp = connection;
+            sourceProcessor.foreach((x,y) -> {
+                GenericRecord record = recordInjection.invert(y).get();
+                System.out.println(record.get("nom"));
+            });
 
-                System.out.println(connection.getClientInfo());
 
-                KStream<String, byte[]> sourceProcessor = builder.stream("tp2", Consumed.with(stringSerdes, byteArray));
+            sourceProcessor.mapValues(msg -> message(msg)).to("AnonymTopic", Produced.with(stringSerdes,byteArray));
 
-                sourceProcessor.foreach((x, y) -> {
-                    try {
-                        queryInsert(tmp, y);
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
+            KafkaStreams kafkaStreams = new KafkaStreams(builder.build(),props);
+            kafkaStreams.start();
 
-                });
-                KafkaStreams kafkaStreams = new KafkaStreams(builder.build(), props);
-                kafkaStreams.start();
 
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            finally {
-                connection.close();
-            }
-        } catch (IllegalStateException e) {
-            e.printStackTrace();
-        } catch (StreamsException | SQLException e) {
-            e.printStackTrace();
+
+        } finally {
+            consumer.close();
         }
-
-
 
     }
 
-    private void queryInsert(Connection connection, byte[] y) throws SQLException {
-        GenericRecord genericRecord = recordInjection.invert(y).get();
-        String nom =  genericRecord.get("nom").toString();
-        String prenom =  genericRecord.get("prenom").toString();
-        int cip = Integer.parseInt(genericRecord.get("cip").toString());
-        double prix = Double.parseDouble(genericRecord.get("prix").toString());
-        int id_pharma = Integer.parseInt(genericRecord.get("idpharma").toString());
-        try {
-            PreparedStatement st = connection.prepareStatement("INSERT INTO transaction (nom, prenom, cip, prix, id_pharma) VALUES (?, ?, ?, ?, ?);");
-            st.setString(1, nom);
-            st.setString(2, prenom);
-            st.setInt(3, cip);
-            st.setDouble(4, prix);
-            st.setInt(5, id_pharma);
-            st.executeUpdate();
+    private byte[] message(byte[] msg) {
+        String nom = "XXX";
+        String prenom = "XXXXX";
+        int cip = (int) recordInjection.invert(msg).get().get("cip");
+        double prix = (double) recordInjection.invert(msg).get().get("prix");
+        int idpharma = (int) recordInjection.invert(msg).get().get("idpharma");
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        GenericData.Record genericRecord = new GenericData.Record(schema);
+
+        genericRecord.put("nom", nom);
+        genericRecord.put("prenom", prenom);
+        genericRecord.put("cip", cip);
+        genericRecord.put("prix", prix);
+        genericRecord.put("idpharma", idpharma);
+
+        return recordInjection.apply(genericRecord);
+
     }
 
     public static void main(String[] args) {
-        ConsumerAvroPersist consumerThread = new ConsumerAvroPersist("tp2");
+        ConsumerAvroAnonym consumerThread = new ConsumerAvroAnonym("tp2");
         consumerThread.run();
     }
 }
