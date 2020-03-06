@@ -37,8 +37,6 @@ public class ConsumerAvroPersist implements Runnable {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class.getName());
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
-        props.put("key.serializer" , "org.apache.kafka.common.serialization.StringSerializer");
-        props.put("value.serializer" , "org.apache.kafka.common.serialization.ByteArraySerializer");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
 

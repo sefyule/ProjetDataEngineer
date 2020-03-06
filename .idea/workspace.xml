@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroAnonym.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroDSL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tp3/ProducerAvroAnonym.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tp3/drugtxn.avsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroAnonym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroAnonym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroDSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroDSL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPersist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPersist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/SchemaTransaction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +46,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/tp3" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/tp3" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tp3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/tp2" />
       <recent name="$PROJECT_DIR$/src/main" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProducerAvro">
+  <component name="RunManager" selected="Application.ProducerAvroAnonym">
     <configuration name="ConsumerAvro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvro" />
       <module name="tp-dataEngineer" />
@@ -86,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerAvroAnonym" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvroAnonym" />
+    <configuration name="ConsumerAvroDSL (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp3.ConsumerAvroDSL" />
       <module name="tp-dataEngineer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tp2.*" />
+          <option name="PATTERN" value="tp3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,19 +106,6 @@
     </configuration>
     <configuration name="ConsumerAvroDSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvroDSL" />
-      <module name="tp-dataEngineer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tp2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerAvroPrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvroPrix" />
       <module name="tp-dataEngineer" />
       <extension name="coverage">
         <pattern>
@@ -138,12 +130,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProducerAvroAnonym" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp3.ProducerAvroAnonym" />
+      <module name="tp-dataEngineer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tp3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConsumerAvroPrix" />
-        <item itemvalue="Application.ProducerAvro" />
-        <item itemvalue="Application.ConsumerAvroAnonym" />
+        <item itemvalue="Application.ProducerAvroAnonym" />
+        <item itemvalue="Application.ConsumerAvroDSL (1)" />
         <item itemvalue="Application.ConsumerAvroDSL" />
+        <item itemvalue="Application.ProducerAvro" />
         <item itemvalue="Application.ConsumerAvro" />
       </list>
     </recent_temporary>

@@ -1,4 +1,4 @@
-package tp2;
+package tp3;
 
 import com.twitter.bijection.Injection;
 import com.twitter.bijection.avro.GenericAvroCodecs;
@@ -15,7 +15,7 @@ import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.KStream;
-
+import tp2.ProducerAvro;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -56,7 +56,7 @@ public class ConsumerAvroDSL implements Runnable {
                 Serde<String> stringSerdes = Serdes.String();
                 Serde<byte[]> byteArray = new Serdes.ByteArraySerde();
                 StreamsBuilder builder = new StreamsBuilder();
-                KStream<String,byte[]> sourceProcessor = builder.stream("tp2",Consumed.with(stringSerdes,byteArray));
+                KStream<String,byte[]> sourceProcessor = builder.stream("tp3",Consumed.with(stringSerdes,byteArray));
                 
                 sourceProcessor.foreach((x,y) -> {
                     GenericRecord record = recordInjection.invert(y).get();
@@ -73,7 +73,7 @@ public class ConsumerAvroDSL implements Runnable {
 
     }
     public static void main(String[] args) {
-        ConsumerAvroDSL consumerThread = new ConsumerAvroDSL("tp2");
+        ConsumerAvroDSL consumerThread = new ConsumerAvroDSL("tp3");
         consumerThread.run();
     }
 
