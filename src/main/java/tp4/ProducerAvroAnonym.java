@@ -1,6 +1,5 @@
-package tp2;
+package tp4;
 
-import com.github.javafaker.Faker;
 import com.twitter.bijection.Injection;
 import com.twitter.bijection.avro.GenericAvroCodecs;
 import org.apache.avro.Schema;
@@ -14,16 +13,15 @@ import org.codehaus.jackson.annotate.JsonMethod;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import tp1.Message;
-import tp1.Personne;
+import tp2.ProducerAvro;
 
-import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class ProducerAvro {
+public class ProducerAvroAnonym {
 
     private static Schema schema;
     private static Injection<GenericRecord, byte[]> recordInjection;
@@ -47,12 +45,12 @@ public class ProducerAvro {
             for(int i=0; i<100 ; i++ ){
                 Message message = new Message();
                 GenericData.Record genericRecord = new GenericData.Record(schema);
-                genericRecord.put("nom", message.getNom());
-                genericRecord.put("prenom", message.getPrenom());
+                genericRecord.put("nom", "XXX");
+                genericRecord.put("prenom", "XXXXX");
                 genericRecord.put("cip", message.getCip());
                 genericRecord.put("prix", message.getPrix());
                 genericRecord.put("idpharma", message.getIdpharma());
-                ProducerRecord<String, byte[]> record = new ProducerRecord<>("tp2" , recordInjection.apply(genericRecord));
+                ProducerRecord<String, byte[]> record = new ProducerRecord<>("tp3" , recordInjection.apply(genericRecord));
                 list.add(message);
                 producer.send(record);
             }

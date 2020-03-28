@@ -1,4 +1,4 @@
-package tp2;
+package tp4;
 
 import com.twitter.bijection.Injection;
 import com.twitter.bijection.avro.GenericAvroCodecs;
@@ -15,21 +15,25 @@ import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.KStream;
-
+import tp2.ProducerAvro;
 
 import java.io.IOException;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Properties;
 
-public class ConsumerAvroDSL implements Runnable {
+public class ConsumerAvroDSLPrixMoyenByMedicament implements Runnable {
 
     private static Schema schema;
     private static Injection<GenericRecord, byte[]> recordInjection;
     private final KafkaConsumer<String, byte[]> consumer;
     public static final String CLIENT_ID = "testTopic";
+    private HashMap<Integer, Double> PrixByMedicament;
+    private HashMap<Integer, Integer> TransactionByMedicament;
+    private HashMap<Integer, Double> MoyennePrixByMedicament;
     Properties props;
 
-    public ConsumerAvroDSL(String topic) {
+    public ConsumerAvroDSLPrixMoyenByMedicament(String topic) {
         props = new Properties();
         props.put("bootstrap.servers","localhost:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
@@ -40,6 +44,9 @@ public class ConsumerAvroDSL implements Runnable {
         consumer.subscribe(Collections.singletonList(topic));
 
 
+        PrixByMedicament = new HashMap<Integer, Double>();
+        TransactionByMedicament = new HashMap<Integer, Integer>();
+        MoyennePrixByMedicament = new HashMap<Integer, Double>();
 
     }
     @Override
@@ -56,11 +63,27 @@ public class ConsumerAvroDSL implements Runnable {
                 Serde<String> stringSerdes = Serdes.String();
                 Serde<byte[]> byteArray = new Serdes.ByteArraySerde();
                 StreamsBuilder builder = new StreamsBuilder();
-                KStream<String,byte[]> sourceProcessor = builder.stream("tp2",Consumed.with(stringSerdes,byteArray));
+                KStream<String,byte[]> sourceProcessor = builder.stream("tp3",Consumed.with(stringSerdes,byteArray));
                 
                 sourceProcessor.foreach((x,y) -> {
                     GenericRecord record = recordInjection.invert(y).get();
-                    System.out.println(record.get("nom"));
+                    int cip = (int)record.get("cip");
+                    double prix = (double)record.get("prix");
+
+                    if(PrixByMedicament.get(cip)==null){
+                        PrixByMedicament.put(cip,prix);
+                        TransactionByMedicament.put(cip,1);
+                        MoyennePrixByMedicament.put(cip,prix);
+                    }
+                    else {
+                        double oldPrix = PrixByMedicament.get(cip);
+                        prix = oldPrix +prix;
+                        PrixByMedicament.put(cip,prix);
+                        int nbrTranscation = TransactionByMedicament.get(cip) +1;
+                        TransactionByMedicament.put(cip,nbrTranscation);
+                        MoyennePrixByMedicament.put(cip,prix/nbrTranscation);
+                    }
+                    System.out.println("cip : " + cip+" | moyenne prix  :" + MoyennePrixByMedicament.get(cip));
                 });
                 KafkaStreams kafkaStreams = new KafkaStreams(builder.build(),props);
                 kafkaStreams.start();
@@ -72,9 +95,14 @@ public class ConsumerAvroDSL implements Runnable {
         }
 
     }
+
+
+
     public static void main(String[] args) {
-        ConsumerAvroDSL consumerThread = new ConsumerAvroDSL("tp2");
+        ConsumerAvroDSLPrixMoyenByMedicament consumerThread = new ConsumerAvroDSLPrixMoyenByMedicament("tp3");
         consumerThread.run();
+
+
     }
 
 }

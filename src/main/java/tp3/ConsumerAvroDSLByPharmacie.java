@@ -1,4 +1,4 @@
-package tp2;
+package tp3;
 
 import com.twitter.bijection.Injection;
 import com.twitter.bijection.avro.GenericAvroCodecs;
@@ -15,21 +15,23 @@ import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.KStream;
-
+import tp2.ProducerAvro;
 
 import java.io.IOException;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Properties;
 
-public class ConsumerAvroDSL implements Runnable {
+public class ConsumerAvroDSLByPharmacie implements Runnable {
 
     private static Schema schema;
     private static Injection<GenericRecord, byte[]> recordInjection;
     private final KafkaConsumer<String, byte[]> consumer;
     public static final String CLIENT_ID = "testTopic";
+    private HashMap<Integer, Double> CumulVenteByPharmacie;
     Properties props;
 
-    public ConsumerAvroDSL(String topic) {
+    public ConsumerAvroDSLByPharmacie(String topic) {
         props = new Properties();
         props.put("bootstrap.servers","localhost:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
@@ -38,6 +40,7 @@ public class ConsumerAvroDSL implements Runnable {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
+        CumulVenteByPharmacie = new HashMap<Integer, Double>();
 
 
 
@@ -56,11 +59,21 @@ public class ConsumerAvroDSL implements Runnable {
                 Serde<String> stringSerdes = Serdes.String();
                 Serde<byte[]> byteArray = new Serdes.ByteArraySerde();
                 StreamsBuilder builder = new StreamsBuilder();
-                KStream<String,byte[]> sourceProcessor = builder.stream("tp2",Consumed.with(stringSerdes,byteArray));
+                KStream<String,byte[]> sourceProcessor = builder.stream("tp3",Consumed.with(stringSerdes,byteArray));
                 
                 sourceProcessor.foreach((x,y) -> {
                     GenericRecord record = recordInjection.invert(y).get();
-                    System.out.println(record.get("nom"));
+                    int idPharmacie = (int)record.get("idpharma");
+                    double prix = (double)record.get("idpharma");
+                    if(CumulVenteByPharmacie.get(idPharmacie)==null){
+                        CumulVenteByPharmacie.put(idPharmacie,prix);
+                    }
+                    else {
+                        double vente = CumulVenteByPharmacie.get(idPharmacie);
+                        prix = vente +prix;
+                        CumulVenteByPharmacie.put(idPharmacie,prix);
+                    }
+                    System.out.println("idpharma : " + idPharmacie+" cumul :" + prix);
                 });
                 KafkaStreams kafkaStreams = new KafkaStreams(builder.build(),props);
                 kafkaStreams.start();
@@ -72,9 +85,14 @@ public class ConsumerAvroDSL implements Runnable {
         }
 
     }
+
+
+
     public static void main(String[] args) {
-        ConsumerAvroDSL consumerThread = new ConsumerAvroDSL("tp2");
+        ConsumerAvroDSLByPharmacie consumerThread = new ConsumerAvroDSLByPharmacie("tp3");
         consumerThread.run();
+
+
     }
 
 }

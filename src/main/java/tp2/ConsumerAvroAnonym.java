@@ -37,8 +37,6 @@ public class ConsumerAvroAnonym implements Runnable {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class.getName());
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
-        props.put("key.serializer" , "org.apache.kafka.common.serialization.StringSerializer");
-        props.put("value.serializer" , "org.apache.kafka.common.serialization.ByteArraySerializer");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
 
@@ -59,7 +57,7 @@ public class ConsumerAvroAnonym implements Runnable {
             Serde<String> stringSerdes = Serdes.String();
             Serde<byte[]> byteArray = new Serdes.ByteArraySerde();
             StreamsBuilder builder = new StreamsBuilder();
-            KStream<String,byte[]> sourceProcessor = builder.stream("tp2", Consumed.with(stringSerdes,byteArray));
+            KStream<String,byte[]> sourceProcessor = builder.stream("tp3", Consumed.with(stringSerdes,byteArray));
 
             sourceProcessor.foreach((x,y) -> {
                 GenericRecord record = recordInjection.invert(y).get();
@@ -100,7 +98,7 @@ public class ConsumerAvroAnonym implements Runnable {
     }
 
     public static void main(String[] args) {
-        ConsumerAvroAnonym consumerThread = new ConsumerAvroAnonym("tp2");
+        ConsumerAvroAnonym consumerThread = new ConsumerAvroAnonym("tp3");
         consumerThread.run();
     }
 }
