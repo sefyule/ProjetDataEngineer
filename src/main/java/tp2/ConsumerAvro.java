@@ -22,7 +22,7 @@ public class ConsumerAvro implements Runnable {
     private static Schema schema;
     private static Injection<GenericRecord, byte[]> recordInjection;
     private final KafkaConsumer<String, byte[]> consumer;
-    public static final String CLIENT_ID = "testTopic";
+    public static final java.lang.String CLIENT_ID = "testTopic";
     Properties props;
 
     public ConsumerAvro(String topic) {

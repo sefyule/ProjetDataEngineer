@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroAnonym.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroDSL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPersist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPersist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/SchemaTransaction" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -60,20 +62,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.ProducerAvro">
-    <configuration name="ConsumerAvro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerAvro" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvro" />
       <module name="tp-dataEngineer" />
       <extension name="coverage">
@@ -140,11 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConsumerAvroPrix" />
         <item itemvalue="Application.ProducerAvro" />
+        <item itemvalue="Application.ConsumerAvroPrix" />
         <item itemvalue="Application.ConsumerAvroAnonym" />
         <item itemvalue="Application.ConsumerAvroDSL" />
-        <item itemvalue="Application.ConsumerAvro" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +153,10 @@
       <workItem from="1581764011851" duration="7000" />
       <workItem from="1581764048276" duration="2942000" />
       <workItem from="1581777890699" duration="34000" />
+      <workItem from="1583488677870" duration="1566000" />
+      <workItem from="1583937341703" duration="1394000" />
+      <workItem from="1584186220286" duration="136000" />
+      <workItem from="1584447276140" duration="14000" />
     </task>
     <servers />
   </component>
@@ -184,10 +177,15 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="400" y="21" key="#ConsumerAvro" timestamp="1581895228180">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="375" y="23" key="#ConsumerAvro" timestamp="1583491258751">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="375" y="23" key="#ConsumerAvro/0.0.1280.800@0.0.1280.800" timestamp="1583491258751" />
     <state x="400" y="21" key="#ConsumerAvro/0.0.1366.728@0.0.1366.728" timestamp="1581895228180" />
+    <state x="316" y="65" key="#ProducerAvro" timestamp="1583491461301">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="316" y="65" key="#ProducerAvro/0.0.1280.800@0.0.1280.800" timestamp="1583491461301" />
     <state x="472" y="198" width="800" height="677" key="#Project_Structure" timestamp="1581073103187">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
@@ -211,6 +209,10 @@
     </state>
     <state x="565" y="288" width="304" height="150" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1581763455313" />
     <state x="834" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580834089587" />
+    <state x="328" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584186232600">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="328" y="135" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1584186232600" />
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581874844942">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -220,24 +222,28 @@
     </state>
     <state x="523" y="196" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581777911985" />
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1583509741633">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1583509741633" />
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
     <state width="1807" height="291" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1583509741630">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1583509741630" />
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
     <state width="1807" height="291" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1583509741629">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1583509741629" />
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
     <state width="1807" height="291" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1583509741632">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1583509741632" />
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
     <state width="1807" height="291" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">
@@ -270,6 +276,10 @@
     </state>
     <state x="429" y="244" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581895206863" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580833535831" />
+    <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583490313345">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="423" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1583490313345" />
     <state x="738" y="171" width="500" height="762" key="refactoring.ChangeSignatureDialog" timestamp="1580937725886">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
