@@ -16,7 +16,13 @@ public class Message {
         Personne p =new Personne();
         this.nom=p.getLastName();
         this.prenom=p.getFirstName();
-        try(Connection connection = DriverManager.getConnection("jdbc:postgresql://sqletud.u-pem.fr/ychekiri_db", "ychekiri", "01/02/1961")){
+        try{
+
+            String URL = "jdbc:mysql://remotemysql.com:3306/CgOJWRXTYv";
+            String LOGIN = "CgOJWRXTYv";
+            String PASSWORD = "jjothkqy4a";
+            Connection connection = DriverManager.getConnection(URL, LOGIN, PASSWORD);
+            System.out.println ("Database connection established");
             Statement statement = null;
             try {
                 statement = ((Connection) connection).createStatement();
@@ -24,7 +30,7 @@ public class Message {
                 e.printStackTrace();
             }
             try {
-                ResultSet resultSet = statement.executeQuery("select * from drugs4projet ORDER BY RANDOM()  LIMIT 1");
+                ResultSet resultSet = statement.executeQuery("select * from CgOJWRXTYv.drugs4projet ORDER BY RAND()  LIMIT 1");
                 while (resultSet.next()) {
                     try {
                         cip =resultSet.getInt("cip");
@@ -38,7 +44,7 @@ public class Message {
                     }
                 }
 
-                ResultSet  resultSet2 = statement.executeQuery("select * from pharm4projet ORDER BY RANDOM()  LIMIT 1");
+                ResultSet  resultSet2 = statement.executeQuery("select * from pharm4projet ORDER BY RAND()  LIMIT 1");
 
                 while (resultSet2.next()) {
                     try {
@@ -52,6 +58,8 @@ public class Message {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
 

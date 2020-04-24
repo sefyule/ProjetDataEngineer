@@ -64,7 +64,7 @@ public class ConsumerAvroDSLByPharmacie implements Runnable {
                 sourceProcessor.foreach((x,y) -> {
                     GenericRecord record = recordInjection.invert(y).get();
                     int idPharmacie = (int)record.get("idpharma");
-                    double prix = (double)record.get("idpharma");
+                    double prix = (double)record.get("prix");
                     if(CumulVenteByPharmacie.get(idPharmacie)==null){
                         CumulVenteByPharmacie.put(idPharmacie,prix);
                     }
