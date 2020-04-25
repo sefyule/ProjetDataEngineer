@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +19,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -37,39 +48,28 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/tp3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/tp4" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/tp4" />
+      <recent name="$PROJECT_DIR$/src/main/resources/tp3" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tp4" />
+      <recent name="tp3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/tp2" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="tp3" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/tp3" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.ProducerAvroAnonym">
-    <configuration name="ConsumerAvro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvro" />
-      <module name="tp-dataEngineer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tp2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.test">
     <configuration name="ConsumerAvroDSL (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tp3.ConsumerAvroDSL" />
       <module name="tp-dataEngineer" />
@@ -122,13 +122,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp1.test" />
+      <module name="ProjetDataEngineer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tp1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.ProducerAvroAnonym" />
         <item itemvalue="Application.ConsumerAvroDSL (1)" />
         <item itemvalue="Application.ConsumerAvroDSL" />
         <item itemvalue="Application.ProducerAvro" />
-        <item itemvalue="Application.ConsumerAvro" />
       </list>
     </recent_temporary>
   </component>
@@ -160,11 +173,6 @@
       <workItem from="1581764011851" duration="7000" />
       <workItem from="1581764048276" duration="2942000" />
       <workItem from="1581777890699" duration="34000" />
-      <workItem from="1585568305735" duration="547000" />
-      <workItem from="1586985484739" duration="466000" />
-      <workItem from="1587019502679" duration="1981000" />
-      <workItem from="1587129725162" duration="592000" />
-      <workItem from="1587197189502" duration="337000" />
     </task>
     <servers />
   </component>
@@ -189,6 +197,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="400" y="21" key="#ConsumerAvro/0.0.1366.728@0.0.1366.728" timestamp="1581895228180" />
+    <state x="524" y="181" key="#ProducerAvroAnonym" timestamp="1587705291552">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="524" y="181" key="#ProducerAvroAnonym/0.23.1680.986@0.23.1680.986" timestamp="1587705291552" />
     <state x="472" y="198" width="800" height="677" key="#Project_Structure" timestamp="1581073103187">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
@@ -198,10 +210,11 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="653" y="210" width="671" height="685" key="#SimpleProducer/67.27.1853.1053@67.27.1853.1053" timestamp="1580834180119" />
-    <state x="415" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581874220139">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="510" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587705228116">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state x="415" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1581874220139" />
+    <state x="510" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.986@0.23.1680.986" timestamp="1587705228116" />
     <state x="665" y="246" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1581073908043">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
@@ -221,25 +234,29 @@
     </state>
     <state x="523" y="196" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581777911985" />
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
-    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1638" height="269" key="GridCell.Tab.0.bottom" timestamp="1587707804437">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1638" height="269" key="GridCell.Tab.0.bottom/0.23.1680.986@0.23.1680.986" timestamp="1587707804437" />
     <state width="1807" height="291" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
-    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1638" height="269" key="GridCell.Tab.0.center" timestamp="1587707804436">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1638" height="269" key="GridCell.Tab.0.center/0.23.1680.986@0.23.1680.986" timestamp="1587707804436" />
     <state width="1807" height="291" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1638" height="269" key="GridCell.Tab.0.left" timestamp="1587707804436">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1638" height="269" key="GridCell.Tab.0.left/0.23.1680.986@0.23.1680.986" timestamp="1587707804436" />
     <state width="1807" height="291" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1581879590662">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1638" height="269" key="GridCell.Tab.0.right" timestamp="1587707804437">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1638" height="269" key="GridCell.Tab.0.right/0.23.1680.986@0.23.1680.986" timestamp="1587707804437" />
     <state width="1807" height="291" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -271,10 +288,10 @@
     </state>
     <state x="429" y="244" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581895206863" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580833535831" />
-    <state x="17" y="23" key="new project wizard" timestamp="1587019813654">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state x="234" y="242" key="new project wizard" timestamp="1587703105551">
+      <screen x="0" y="23" width="1680" height="986" />
     </state>
-    <state x="17" y="23" key="new project wizard/0.23.1280.726@0.23.1280.726" timestamp="1587019813654" />
+    <state x="234" y="242" key="new project wizard/0.23.1680.986@0.23.1680.986" timestamp="1587703105551" />
     <state x="738" y="171" width="500" height="762" key="refactoring.ChangeSignatureDialog" timestamp="1580937725886">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
