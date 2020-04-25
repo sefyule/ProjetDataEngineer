@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +160,11 @@
       <workItem from="1581764011851" duration="7000" />
       <workItem from="1581764048276" duration="2942000" />
       <workItem from="1581777890699" duration="34000" />
+      <workItem from="1585568305735" duration="547000" />
+      <workItem from="1586985484739" duration="466000" />
+      <workItem from="1587019502679" duration="1981000" />
+      <workItem from="1587129725162" duration="592000" />
+      <workItem from="1587197189502" duration="337000" />
     </task>
     <servers />
   </component>
@@ -267,6 +271,10 @@
     </state>
     <state x="429" y="244" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581895206863" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580833535831" />
+    <state x="17" y="23" key="new project wizard" timestamp="1587019813654">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="17" y="23" key="new project wizard/0.23.1280.726@0.23.1280.726" timestamp="1587019813654" />
     <state x="738" y="171" width="500" height="762" key="refactoring.ChangeSignatureDialog" timestamp="1580937725886">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
