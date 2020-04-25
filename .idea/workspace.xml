@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:branch" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e6ac164-59a2-44f4-8517-7531aa86d8e1" name="Default Changelist" comment="">
+    <list default="true" id="da357b33-ad7a-42f8-845f-ef55a122888f" name="Default Changelist" comment="Merge branch 'master' of https://github.com/sefyule/ProjetDataEngineer&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/tp1/Message.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,20 +49,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XILicbtuVbxjR5v5zQMuEf3YxD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -55,21 +70,34 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/tp4" />
-      <recent name="$PROJECT_DIR$/src/main/resources/tp3" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/tp2" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tp4" />
       <recent name="tp3" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/tp2" />
-      <recent name="$PROJECT_DIR$/src/main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/tp4" />
+      <recent name="$PROJECT_DIR$/src/main/resources/tp3" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Producer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp1.Consumer" />
+      <module name="ProjetDataEngineer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tp1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerAvroDSL (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tp3.ConsumerAvroDSL" />
       <module name="tp-dataEngineer" />
@@ -83,25 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerAvroDSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvroDSL" />
-      <module name="tp-dataEngineer" />
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp1.Producer" />
+      <module name="ProjetDataEngineer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tp2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerAvro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp2.ProducerAvro" />
-      <module name="tp-dataEngineer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tp2.*" />
+          <option name="PATTERN" value="tp1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,25 +152,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Producer" />
+        <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.ProducerAvroAnonym" />
         <item itemvalue="Application.ConsumerAvroDSL (1)" />
-        <item itemvalue="Application.ConsumerAvroDSL" />
-        <item itemvalue="Application.ProducerAvro" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -184,13 +187,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/sefyule/ProjetDataEngineer&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/tp1/Message.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/sefyule/ProjetDataEngineer&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/tp1/Message.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="400" y="21" key="#ConsumerAvro" timestamp="1581895228180">
@@ -234,28 +240,32 @@
     </state>
     <state x="523" y="196" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581777911985" />
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
-    <state width="1638" height="269" key="GridCell.Tab.0.bottom" timestamp="1587707804437">
-      <screen x="0" y="23" width="1680" height="986" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1587837507426">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1587837507426" />
     <state width="1638" height="269" key="GridCell.Tab.0.bottom/0.23.1680.986@0.23.1680.986" timestamp="1587707804437" />
     <state width="1807" height="291" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
-    <state width="1638" height="269" key="GridCell.Tab.0.center" timestamp="1587707804436">
-      <screen x="0" y="23" width="1680" height="986" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1587837507425">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1587837507425" />
     <state width="1638" height="269" key="GridCell.Tab.0.center/0.23.1680.986@0.23.1680.986" timestamp="1587707804436" />
     <state width="1807" height="291" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1638" height="269" key="GridCell.Tab.0.left" timestamp="1587707804436">
-      <screen x="0" y="23" width="1680" height="986" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1587837507424">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1587837507424" />
     <state width="1638" height="269" key="GridCell.Tab.0.left/0.23.1680.986@0.23.1680.986" timestamp="1587707804436" />
     <state width="1807" height="291" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1638" height="269" key="GridCell.Tab.0.right" timestamp="1587707804437">
-      <screen x="0" y="23" width="1680" height="986" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1587837507425">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1587837507425" />
     <state width="1638" height="269" key="GridCell.Tab.0.right/0.23.1680.986@0.23.1680.986" timestamp="1587707804437" />
     <state width="1807" height="291" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">
@@ -288,6 +298,10 @@
     </state>
     <state x="429" y="244" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581895206863" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580833535831" />
+    <state x="337" y="142" width="606" height="486" key="find.popup" timestamp="1587831899906">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="337" y="142" width="606" height="486" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1587831899906" />
     <state x="234" y="242" key="new project wizard" timestamp="1587703105551">
       <screen x="0" y="23" width="1680" height="986" />
     </state>
@@ -296,9 +310,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="738" y="171" width="500" height="762" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1580937725886" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1580939055303">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="407" y="182" width="670" height="468" key="search.everywhere.popup" timestamp="1587829608487">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
+    <state x="407" y="182" width="670" height="468" key="search.everywhere.popup/0.23.1280.726@0.23.1280.726" timestamp="1587829608487" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1580939055303" />
   </component>
 </project>

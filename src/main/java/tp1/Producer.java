@@ -1,6 +1,5 @@
 package tp1;
 
-import com.github.javafaker.Faker;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.codehaus.jackson.JsonGenerationException;
@@ -28,7 +27,7 @@ public class Producer {
             props.put("key.serializer" , "org.apache.kafka.common.serialization.StringSerializer");
             props.put("value.serializer" , "org.apache.kafka.common.serialization.StringSerializer");
             KafkaProducer<String, String> producer = new KafkaProducer<String, String>(props);
-            Faker faker = new Faker();
+
             List<Message> list= new ArrayList<Message>();
             for(int i=0; i<100 ; i++ ){
                 Message message = new Message();
