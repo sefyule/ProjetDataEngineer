@@ -37,10 +37,8 @@ public class ConsumerAvroPrix implements Runnable {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
-
-
-
     }
+
     @Override
     public void run() {
         try{
@@ -75,6 +73,7 @@ public class ConsumerAvroPrix implements Runnable {
         }
 
     }
+
     public static void main(String[] args) {
         ConsumerAvroPrix consumerThread = new ConsumerAvroPrix("AnonymTopic");
         consumerThread.run();

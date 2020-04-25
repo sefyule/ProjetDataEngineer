@@ -38,10 +38,8 @@ public class ConsumerAvroDSL implements Runnable {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
-
-
-
     }
+
     @Override
     public void run() {
         try{
@@ -65,13 +63,11 @@ public class ConsumerAvroDSL implements Runnable {
                 KafkaStreams kafkaStreams = new KafkaStreams(builder.build(),props);
                 kafkaStreams.start();
 
-
-
         } finally {
             consumer.close();
         }
-
     }
+
     public static void main(String[] args) {
         ConsumerAvroDSL consumerThread = new ConsumerAvroDSL("tp3");
         consumerThread.run();

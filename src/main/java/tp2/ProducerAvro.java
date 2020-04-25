@@ -1,6 +1,5 @@
 package tp2;
 
-import com.github.javafaker.Faker;
 import com.twitter.bijection.Injection;
 import com.twitter.bijection.avro.GenericAvroCodecs;
 import org.apache.avro.Schema;
@@ -14,9 +13,7 @@ import org.codehaus.jackson.annotate.JsonMethod;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import tp1.Message;
-import tp1.Personne;
 
-import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -66,7 +63,6 @@ public class ProducerAvro {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
 
     }
 }

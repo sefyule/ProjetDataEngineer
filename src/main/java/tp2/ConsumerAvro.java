@@ -3,7 +3,6 @@ package tp2;
 import com.twitter.bijection.Injection;
 import com.twitter.bijection.avro.GenericAvroCodecs;
 import org.apache.avro.Schema;
-import org.apache.avro.generic.GenericData;
 import org.apache.avro.generic.GenericRecord;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -11,7 +10,6 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.ByteArrayDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import tp1.Consumer;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -34,6 +32,7 @@ public class ConsumerAvro implements Runnable {
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
     }
+
     @Override
     public void run() {
         try{
@@ -49,8 +48,8 @@ public class ConsumerAvro implements Runnable {
                 ConsumerRecords<String, byte[]> records = consumer.poll(Long.MAX_VALUE);
                 for (ConsumerRecord<String, byte[]> record : records) {
                     scala.util.Try<GenericRecord> genericRecord = recordInjection.invert(record.value());
-                    System.out.println(genericRecord);
-                    System.out.println(genericRecord.get().get("nom"));
+                    System.out.println(genericRecord.get());
+                    //System.out.println(genericRecord.get().get("nom"));
 
                 }
             }
@@ -63,6 +62,5 @@ public class ConsumerAvro implements Runnable {
         ConsumerAvro consumerThread = new ConsumerAvro("tp2");
         consumerThread.run();
     }
-
 
 }

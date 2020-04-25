@@ -28,7 +28,15 @@
     <list default="true" id="da357b33-ad7a-42f8-845f-ef55a122888f" name="Default Changelist" comment="Merge branch 'master' of https://github.com/sefyule/ProjetDataEngineer&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/tp1/Message.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp1/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroAnonym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroAnonym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroDSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroDSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPersist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPersist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ConsumerAvroPrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp2/ProducerAvro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp3/ConsumerAvroDSLByPharmacie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tp3/ProducerAvroAnonym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tp3/ProducerAvroAnonym.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +92,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Producer">
+  <component name="RunManager" selected="Application.ConsumerAvroDSL">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tp1.Consumer" />
       <module name="ProjetDataEngineer" />
@@ -98,12 +106,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerAvroDSL (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp3.ConsumerAvroDSL" />
-      <module name="tp-dataEngineer" />
+    <configuration name="ConsumerAvro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvro" />
+      <module name="ProjetDataEngineer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tp3.*" />
+          <option name="PATTERN" value="tp2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerAvroDSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp2.ConsumerAvroDSL" />
+      <module name="ProjetDataEngineer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,25 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerAvroAnonym" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp3.ProducerAvroAnonym" />
-      <module name="tp-dataEngineer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tp3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tp1.test" />
+    <configuration name="ProducerAvro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tp2.ProducerAvro" />
       <module name="ProjetDataEngineer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tp1.*" />
+          <option name="PATTERN" value="tp2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerAvro" />
+        <item itemvalue="Application.ConsumerAvroDSL" />
+        <item itemvalue="Application.ConsumerAvro" />
         <item itemvalue="Application.Producer" />
         <item itemvalue="Application.Consumer" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.ProducerAvroAnonym" />
-        <item itemvalue="Application.ConsumerAvroDSL (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -240,32 +248,32 @@
     </state>
     <state x="523" y="196" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581777911985" />
     <state x="776" y="310" width="501" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580834006561" />
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1587837507426">
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1587849764087">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1587837507426" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1587849764087" />
     <state width="1638" height="269" key="GridCell.Tab.0.bottom/0.23.1680.986@0.23.1680.986" timestamp="1587707804437" />
     <state width="1807" height="291" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
-    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1587837507425">
+    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1587849764086">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
-    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1587837507425" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1587849764086" />
     <state width="1638" height="269" key="GridCell.Tab.0.center/0.23.1680.986@0.23.1680.986" timestamp="1587707804436" />
     <state width="1807" height="291" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1587837507424">
+    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1587849764085">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
-    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1587837507424" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1587849764085" />
     <state width="1638" height="269" key="GridCell.Tab.0.left/0.23.1680.986@0.23.1680.986" timestamp="1587707804436" />
     <state width="1807" height="291" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693856" />
-    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1587837507425">
+    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1587849764087">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581879590662" />
-    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1587837507425" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1587849764087" />
     <state width="1638" height="269" key="GridCell.Tab.0.right/0.23.1680.986@0.23.1680.986" timestamp="1587707804437" />
     <state width="1807" height="291" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1580940693857" />
     <state width="1807" height="344" key="GridCell.Tab.1.bottom" timestamp="1580834321203">

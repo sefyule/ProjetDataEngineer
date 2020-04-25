@@ -64,7 +64,6 @@ public class ProducerAvroAnonym {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
+        
     }
 }

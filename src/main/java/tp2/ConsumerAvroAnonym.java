@@ -39,10 +39,8 @@ public class ConsumerAvroAnonym implements Runnable {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
-
-
-
     }
+
     @Override
     public void run() {
         try{
@@ -64,13 +62,10 @@ public class ConsumerAvroAnonym implements Runnable {
                 System.out.println(record.get("nom"));
             });
 
-
             sourceProcessor.mapValues(msg -> message(msg)).to("AnonymTopic", Produced.with(stringSerdes,byteArray));
 
             KafkaStreams kafkaStreams = new KafkaStreams(builder.build(),props);
             kafkaStreams.start();
-
-
 
         } finally {
             consumer.close();

@@ -41,10 +41,8 @@ public class ConsumerAvroDSLByPharmacie implements Runnable {
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
         CumulVenteByPharmacie = new HashMap<Integer, Double>();
-
-
-
     }
+
     @Override
     public void run() {
         try{
@@ -78,20 +76,15 @@ public class ConsumerAvroDSLByPharmacie implements Runnable {
                 KafkaStreams kafkaStreams = new KafkaStreams(builder.build(),props);
                 kafkaStreams.start();
 
-
-
         } finally {
             consumer.close();
         }
 
     }
 
-
-
     public static void main(String[] args) {
         ConsumerAvroDSLByPharmacie consumerThread = new ConsumerAvroDSLByPharmacie("tp3");
         consumerThread.run();
-
 
     }
 
