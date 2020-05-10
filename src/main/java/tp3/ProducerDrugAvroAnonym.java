@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class ProducerAvroAnonym {
+public class ProducerDrugAvroAnonym {
 
     private static Schema schema;
     private static Injection<GenericRecord, byte[]> recordInjection;
@@ -42,6 +42,7 @@ public class ProducerAvroAnonym {
 
 
             List<Message> list= new ArrayList<Message>();
+            int count = 0;
             for(int i=0; i<100 ; i++ ){
                 Message message = new Message();
                 GenericData.Record genericRecord = new GenericData.Record(schema);
@@ -53,7 +54,9 @@ public class ProducerAvroAnonym {
                 ProducerRecord<String, byte[]> record = new ProducerRecord<>("tp3" , recordInjection.apply(genericRecord));
                 list.add(message);
                 producer.send(record);
+                count++;
             }
+            System.out.println("Total Produce : "+count);
             producer.close();
         } catch (JsonGenerationException e) {
             e.printStackTrace();
