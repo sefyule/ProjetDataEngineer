@@ -28,7 +28,7 @@ public class Message {
 
         // Try-with-resources => No need to close the connection
         try(Connection connection = DriverManager.getConnection(URL, LOGIN, PASSWORD)) {
-            System.out.println ("Database connection established");
+            //System.out.println ("Database connection established");
             Statement statement = null;
             try {
                 statement = ((Connection) connection).createStatement();

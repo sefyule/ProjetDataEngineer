@@ -55,15 +55,6 @@ public class SimpleProducer {
 
 		System.out.println("Fin");
 	}
-    /* Debut de question 7 :
-	try (
-    Connection connection = DriverManager.getConnection("jdbc:postgresql://sqletud.u-pem.fr/ychekiri_db", "ychekiri", "01/02/1961")) {
-        Statement statement = ((Connection) connection).createStatement();
-        ResultSet resultSet = statement.executeQuery("SELECT * FROM ciscipdenorm");
 
-
-        while (resultSet.next()) {
-            if (count < 1000) {
-                resultSet.getString("cip7");*/
 
 }

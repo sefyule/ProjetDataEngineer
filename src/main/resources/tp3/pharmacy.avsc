@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "Pharmacy",
+  "fields" : [
+    {"name":"id", "type":"int"},
+    {"name":"nom", "type":"string"},
+    {"name":"adresse", "type":"string"},
+    {"name":"depart", "type":"string"},
+    {"name":"region", "type":"string"}
+  ]
+}
