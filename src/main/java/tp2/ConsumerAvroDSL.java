@@ -35,7 +35,7 @@ public class ConsumerAvroDSL implements Runnable {
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class.getName());
-        props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
+        props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_ConsumerAvroDSL");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
     }
@@ -54,8 +54,7 @@ public class ConsumerAvroDSL implements Runnable {
                 Serde<String> stringSerdes = Serdes.String();
                 Serde<byte[]> byteArray = new Serdes.ByteArraySerde();
                 StreamsBuilder builder = new StreamsBuilder();
-                KStream<String,byte[]> sourceProcessor = builder.stream("tp2",Consumed.with(stringSerdes,byteArray));
-                
+                KStream<String,byte[]> sourceProcessor = builder.stream("topicTp2",Consumed.with(stringSerdes,byteArray));
                 sourceProcessor.foreach((x,y) -> {
                     GenericRecord record = recordInjection.invert(y).get();
                     System.out.println(record.get("nom"));
@@ -70,7 +69,7 @@ public class ConsumerAvroDSL implements Runnable {
     }
 
     public static void main(String[] args) {
-        ConsumerAvroDSL consumerThread = new ConsumerAvroDSL("tp2");
+        ConsumerAvroDSL consumerThread = new ConsumerAvroDSL("topicTp2");
         consumerThread.run();
     }
 

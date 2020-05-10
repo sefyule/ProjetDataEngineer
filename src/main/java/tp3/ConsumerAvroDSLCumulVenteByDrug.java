@@ -38,7 +38,7 @@ public class ConsumerAvroDSLCumulVenteByDrug implements Runnable {
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class.getName());
-        props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
+        props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_ConsumerAvroDSLCumulVenteByDrug");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
         cumulVenteByDrug = new HashMap<Integer, Double>();

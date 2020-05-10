@@ -34,7 +34,7 @@ public class ConsumerAvroPrix implements Runnable {
         props.put(ConsumerConfig.GROUP_ID_CONFIG, CLIENT_ID);
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class.getName());
-        props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_id");
+        props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_ConsumerAvroPrix");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
     }
@@ -57,7 +57,6 @@ public class ConsumerAvroPrix implements Runnable {
 
             sourceProcessor.foreach((x,y) -> {
                 GenericRecord record = recordInjection.invert(y).get();
-                System.out.println("ici");
                 if ((double) record.get("prix") > 4.0)
                     System.out.println(record);
                 else

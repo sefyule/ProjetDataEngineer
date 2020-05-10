@@ -40,6 +40,7 @@ public class ConsumerCumulDrugByRegion implements Runnable {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG,"Application_ConsumerCumulDrugByRegion");
         consumer = new KafkaConsumer<String, byte[]>(props);
         consumer.subscribe(Collections.singletonList(topic));
+        cumulVenteByRegion=new HashMap<>();
         this.topic=topic;
     }
 
@@ -61,7 +62,7 @@ public class ConsumerCumulDrugByRegion implements Runnable {
 
             sourceProcessor.foreach((x,y) -> {
                 GenericRecord record = recordInjection.invert(y).get();
-                String region = (String)record.get("region");
+                String region = record.get("region").toString();
                 double prix = (double)record.get("prix");
                 if(cumulVenteByRegion.get(region)==null){
                     cumulVenteByRegion.put(region,prix);
@@ -71,7 +72,7 @@ public class ConsumerCumulDrugByRegion implements Runnable {
                     prix = vente +prix;
                     cumulVenteByRegion.put(region,prix);
                 }
-                System.out.println("Region : " + region+" | cumul :" + prix);
+                System.out.println("Region : " + region+" | cumul : " + prix);
 
             });
             KafkaStreams kafkaStreams = new KafkaStreams(builder.build(),props);

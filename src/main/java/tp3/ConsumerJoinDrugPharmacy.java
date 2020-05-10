@@ -103,7 +103,8 @@ public class ConsumerJoinDrugPharmacy implements Runnable {
         genericRecord.put("region", recordRegion.get("region"));
 
 
-
+        System.out.println("Region : " +recordRegion.get("region") );
+        System.out.println("nom : " +recordRegion.get("nom") );
 
         return recordInjectionResultJoin.apply(genericRecord);
 

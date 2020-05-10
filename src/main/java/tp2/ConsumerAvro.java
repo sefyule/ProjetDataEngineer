@@ -59,7 +59,7 @@ public class ConsumerAvro implements Runnable {
 
     }
     public static void main(String[] args) {
-        ConsumerAvro consumerThread = new ConsumerAvro("tp2");
+        ConsumerAvro consumerThread = new ConsumerAvro("topicTp2");
         consumerThread.run();
     }
 
