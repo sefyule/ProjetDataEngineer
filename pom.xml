@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <apache.avro.version>1.8.1</apache.avro.version>
+        <apache.avro.version>1.11.3</apache.avro.version>
         <apache.kafka.2.11.version>0.8.2.2</apache.kafka.2.11.version>
         <bijection.avro.2.11.version>0.9.5</bijection.avro.2.11.version>
         <jdk.version>1.8</jdk.version>
